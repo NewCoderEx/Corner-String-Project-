@@ -1,0 +1,182 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #D9D9D9;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* nav */
+
+.nav-categories {
+  display: flex;
+  list-style: none;
+  padding-left: 30px;
+}
+
+.nav-item {
+  padding: 1%;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #C56626;
+	font-weight: bold;
+}
+
+/* header */
+
+.container-header {
+	display: flex;
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+}
+
+.header-image {
+	margin: 90px;
+	margin-bottom: 0;
+	height: 100%;
+	width: 50%;
+}
+
+.header-title {
+	display: grid;
+	grid-template-columns: 0;
+  grid-template-rows: 0;
+	margin-top: 8%;
+	align-items: center;
+}
+
+.header-fade-in {
+	animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.header-corner {
+	color: #C56626;
+	font-size: 6.5rem;
+	font-family: 'Shrikhand', serif;
+	margin-top: 50%;
+	margin-left: 30px;
+	opacity: 90%;
+}
+
+.header-string {
+	color: #FFBD59;
+}
+
+.header-square {
+	border: 15px solid #3C1F11;
+	height: 150px;
+  width: 425px;
+	margin-top: 370px;
+}
+
+/* Services */
+
+.container-services {
+  padding-top: 30px;
+  padding-left: 5%;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.333333%;
+  padding: 2% 5% 5% 5%;
+}
+
+.category-services {
+	margin: 50px;
+}
+
+.service-image {
+  border-radius: 5px;
+  border: 5px solid #C56626;
+}
+
+/* Contact */
+
+.container-contact {
+	display: flex;
+	background-color: #3C1F11;
+}
+
+.contact-image {
+	width: 60%;
+	height: 100%;
+}
+
+.contact-content {
+	border: 5px solid #C56626;
+	border-right: none;
+	width: 40%;
+	margin: 50px;
+	margin-right: 0;
+	padding-left: 40px;
+}
+
+.contact-visit {
+	font-family: 'Shrikhand', serif;
+	color: #FFBD59;
+	font-size: 4rem;
+}
+
+.contact-title {
+	color: #FFBD59;
+}
+
+.contact-sub {
+	color: #fff;
+}
+
+/* footer */
+
+.copyright {
+	text-align: center;
+	padding: 10px;
+	background-color: #000;
+	color: #fff;
+}
+
+
+@media (max-width: 950px) and (min-width: 430px) {
+  .container-header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+	.header-image {
+		margin: 0;
+	}
+
+	.container-services {
+		flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+	}
+
+	.container-contact {
+		flex-direction: column;
+    justify-content: center;
+    text-align: center;
+		margin: 0;
+	}
+
+	.contact-image {
+		width: 100%;
+	}
+
+	.contact-content {
+		width: 100%;
+		border: none;
+		padding: 0;
+	}
+}
